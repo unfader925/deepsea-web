@@ -1,0 +1,65 @@
+/* 1. 기본 변수 설정 */
+:root {
+    --primary-color: #0077ff;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+    --white: #ffffff;
+}
+
+/* 2. 전체 초기화 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    font-family: 'Pretendard', sans-serif; 
+    line-height: 1.6; 
+    color: var(--text-color); 
+    background: var(--bg-color);
+}
+
+.container { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    display: flex; 
+    padding: 0 20px;
+}
+
+/* 3. 헤더 디자인 */
+header {
+    background: var(--white);
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+header .container { justify-content: space-between; align-items: center; }
+header h1 span { color: var(--primary-color); }
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav a { text-decoration: none; color: var(--text-color); font-weight: bold; }
+
+/* 4. 메인 레이아웃 (컨텐츠 + 사이드바) */
+main { margin-top: 40px; gap: 40px; }
+.content { flex: 2; }
+.sidebar { flex: 1; }
+
+.post {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.game-card {
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.btn-game {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
